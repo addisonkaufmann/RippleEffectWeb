@@ -1,4 +1,4 @@
-<div class="animated fadeIn" ng-if="!isNarrowScreen" style="overflow-x: hidden;">
+<div class="animated fadeIn d-none d-md-block"  style="overflow-x: hidden;">
 	<div class="row no-gutters">
 		<div ng-repeat="c in contaminants" class="col-xs-2 col column-label">{{c}}</div>
 	</div>
@@ -129,7 +129,7 @@
     </div>
 </div>
 
-<div ng-if="isNarrowScreen" class="animated fadeIn">
+<div class="animated fadeIn d-xs-block d-md-none">
  <div class="row no-gutters">
  	<div ng-repeat="county in counties" class="col col-xs-4 column-label">{{county}}</div>
 </div>

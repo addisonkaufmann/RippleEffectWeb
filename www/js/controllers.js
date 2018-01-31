@@ -1,30 +1,9 @@
 app.controller('navbarController', function($scope, $window){
-    $scope.isNarrowScreen = $window.innerWidth < 992;
-    console.log($window.innerWidth);
-    $scope.navHeight = {'height': '100px'};
-    var short = '100px';
-    var tall = '170px';
-    $scope.menuOpen = false;
-    $scope.openMenu = function(){
-        console.log("opening menu");
-        $scope.menuOpen = !$scope.menuOpen;
-        if ($scope.menuOpen){
-            $scope.navHeight.height = tall;
-        } else {
-            $scope.navHeight.height = short;
-        }
-    };
+            console.log("hey");
 
-    angular.element($window).on('resize', function () {
-        if (!$scope.isNarrowScreen && $window.innerWidth < 992){
-            console.log("narrow");
-            $scope.isNarrowScreen = true;
-            $scope.$apply();
-        } else if ($scope.isNarrowScreen && $window.innerWidth >= 992) {
-            $scope.isNarrowScreen = false;
-            $scope.$apply();
-        }
-    });
+    $scope.toggleNav = function(){
+        console.log("hey");
+    };
 });
 
 
