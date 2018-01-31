@@ -13,28 +13,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/partial-home.html',
             controller: 'homeController'
         })
-        
-        // nested list with custom controller
-        .state('home.list', {
-            url: '/list',
-            templateUrl: 'templates/partial-home-list.html',
-            controller: function($scope, $window) {
-                $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
-                $scope.width = $window.innerWidth;
-                $scope.loaded = function(){
-                    console.log("hey bitches");
-                };
-                angular.element($window).on('resize', function () {
-                    console.log($window.innerWidth);
-                });
-            }
-        })
-        
-        // nested list with just some random string data
-        .state('home.paragraph', {
-            url: '/paragraph',
-            template: 'I could sure use a drink right now.'
-        })
 
         .state('detail', {
             url: '/detail/:county/:contaminant', 
@@ -79,10 +57,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/about',
             templateUrl: 'templates/partial-about.html', 
             controller: function($scope, $window, $document) {
-                $scope.showIntro = true;
-                $scope.showHistory = false;
-                $scope.showWater = false;
-                $scope.showRipple = false;
+                $scope.step = -1;
             }          
         })
 

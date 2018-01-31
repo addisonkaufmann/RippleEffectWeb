@@ -1,3 +1,31 @@
+app.controller('navbarController', function($scope, $window){
+    $scope.isNarrowScreen = $window.innerWidth < 992;
+    console.log($window.innerWidth);
+    $scope.navHeight = {'height': '100px'};
+    var short = '100px';
+    var tall = '170px';
+    $scope.menuOpen = false;
+    $scope.openMenu = function(){
+        console.log("opening menu");
+        $scope.menuOpen = !$scope.menuOpen;
+        if ($scope.menuOpen){
+            $scope.navHeight.height = tall;
+        } else {
+            $scope.navHeight.height = short;
+        }
+    };
+
+    angular.element($window).on('resize', function () {
+        if (!$scope.isNarrowScreen && $window.innerWidth < 992){
+            console.log("narrow");
+            $scope.isNarrowScreen = true;
+            $scope.$apply();
+        } else if ($scope.isNarrowScreen && $window.innerWidth >= 992) {
+            $scope.isNarrowScreen = false;
+            $scope.$apply();
+        }
+    });
+});
 
 
 app.controller('scotchController', function($scope) {
@@ -21,6 +49,29 @@ app.controller('scotchController', function($scope) {
     
 });
 
+app.controller('SalesController', ['$scope','$interval', function($scope, $interval){
+    $scope.salesData=[
+        {hour: 1,sales: 54},
+        {hour: 2,sales: 66},
+        {hour: 3,sales: 77},
+        {hour: 4,sales: 70},
+        {hour: 5,sales: 60},
+        {hour: 6,sales: 63},
+        {hour: 7,sales: 55},
+        {hour: 8,sales: 47},
+        {hour: 9,sales: 55},
+        {hour: 10,sales: 30}
+    ];
+
+    $interval(function(){
+        var hour=$scope.salesData.length+1;
+        var sales= Math.round(Math.random() * 100);
+        $scope.salesData.push({hour: hour, sales:sales});
+    }, 1000, 10);
+}]);
+
+
+
 
 app.controller('detailController', function($scope, $stateParams, $state, $http, GilaData, YavapaiData, PimaData) {
     $scope.contaminant = $stateParams.contaminant;
@@ -36,7 +87,7 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
         "Pima": PimaData
     };
     var data = allData[$stateParams.county];
-    console.log(data);
+    // console.log(data);
 
     var allColors = {
         "Arsenic": "#5fbcbf",
@@ -173,19 +224,6 @@ app.controller('homeController', ['$scope', '$window', '$sce', '$state', '$state
     $scope.counties = ['Pima', 'Gila', 'Yavapai'];
     $scope.contaminants = ['Arsenic', 'Lead', 'Nitrate', 'Fluoride', 'pH'];
 
-    $scope.width = $window.innerWidth;
-    $scope.isNarrowScreen = $window.innerWidth <= 992;
-
-
-    angular.element($window).on('resize', function () {
-        if (!$scope.isNarrowScreen && $window.innerWidth <= 992){
-            $scope.isNarrowScreen = true;
-            $scope.$apply();
-        } else if ($scope.isNarrowScreen && $window.innerWidth > 992) {
-            $scope.isNarrowScreen = false;
-            $scope.$apply();
-        }
-    });
 
     $scope.playVideo = function(row, col){
         // var vidid = "video" + row + col;
@@ -207,7 +245,7 @@ app.controller('homeController', ['$scope', '$window', '$sce', '$state', '$state
             county = $scope.counties[row];
             con = $scope.contaminants[col];
         }
-        console.log("going to detail page for " + county + " " + con);
+        // console.log("going to detail page for " + county + " " + con);
 
         $state.go('detail', {county: county, contaminant: con});
     };

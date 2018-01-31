@@ -74,7 +74,7 @@
   color: $teal-med-light;
   text-transform: uppercase;
   font-family: Charlevoix-Bold;
-  font-size: 100px;
+  font-size: 85px;
   text-align: center; 
 }
 
@@ -262,6 +262,30 @@ h1, h2, h3, h4, h5, h6, a.button {
 
 }
 
+.narrow-nav {
+  background-color: $teal-med-light;
+  color: white;
+
+}
+
+.narrow-nav a:link {
+    color: white;
+}
+
+/* visited link */
+.narrow-nav a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.narrow-nav a:hover {
+    color: white;
+}
+
+/* selected link */
+.narrow-nav a:active {
+    color: white;
+}
 
 .oneVideoWrapper {
   position: absolute;
@@ -297,20 +321,6 @@ h1, h2, h3, h4, h5, h6, a.button {
   height: 100%;
 }
 
-// .iframe-hover {
-//   background-color: black;
-//   opacity: 1;
-//   -webkit-transition: opacity 0.2s ease-in-out;
-//     -moz-transition: opacity 0.2s ease-in-out;
-//     -ms-transition: opacity 0.2s ease-in-out;
-//     -o-transition: opacity 0.2s ease-in-out;
-//     transition: opacity 0.2s ease-in-out;
-// }
-
-// .row-hover:hover .iframe-hover{
-//   opacity: 0;
-// }
-
 
 .row-col-hover {
   background-color: black;
@@ -343,11 +353,6 @@ h1, h2, h3, h4, h5, h6, a.button {
   font-family: Charlevoix-Bold;
   text-align: center;
 }
-
-
-// .row-hover:hover .video-hover{
-//   opacity: 0.5;
-// }
 
 .row-hover:hover {
   background-color: $teal-med-dark;

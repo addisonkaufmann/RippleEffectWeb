@@ -110,7 +110,7 @@
   color: #3eac92;
   text-transform: uppercase;
   font-family: Charlevoix-Bold;
-  font-size: 100px;
+  font-size: 85px;
   text-align: center; }
 
 .human-effect-quote {
@@ -258,6 +258,25 @@ h1, h2, h3, h4, h5, h6, a.button {
 
 .p-text {
   font-family: Geogrotesque-Regular; }
+
+.narrow-nav {
+  background-color: #3eac92;
+  color: white; }
+
+.narrow-nav a:link {
+  color: white; }
+
+/* visited link */
+.narrow-nav a:visited {
+  color: white; }
+
+/* mouse over link */
+.narrow-nav a:hover {
+  color: white; }
+
+/* selected link */
+.narrow-nav a:active {
+  color: white; }
 
 .oneVideoWrapper {
   position: absolute;

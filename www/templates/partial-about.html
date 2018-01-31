@@ -1,54 +1,61 @@
 <div class="container about-text animated fadeIn" >
-	<div  style="margin-top: 50px;" class="about-header" ng-class="{ 'faded': !showIntro }" ng-click="showIntro = !showIntro; showRipple = false; showHistory = false; showWater = false;" >
+	<div  style="margin-top: 50px; cursor: pointer;" class="about-header" ng-class="{ 'faded': step != 0 }" ng-click="step = step == 0? step = -1 : step = 0;" >
 		Introduction
 	</div>
 
-	<p ng-show="showIntro">
-	There are 24,183 mines in the state of Arizona. They go in and out of use depending on the market values of the materials they are extracting. Mining in Arizona, whether currently active or not, pollutes Arizona’s groundwater with arsenic, lead, nitrate, fluoride, and other contaminants.
-	  <br/><br/>
-	More than 330,000 people, or 5% of the state’s population gets its drinking water from private wells, which are not subject to the Environmental Protection Agency’s (EPA’s) Safe Drinking Water Act (SDWA) regulations. Sampling is not required and seldom conducted. Groundwater constitutes about 3.1 million acre-feet or 43 % of Arizona’s annual water use.  The vast majority of groundwater pumped in the state is used to irrigate crops and for public water supplies.
-	  <br/><br/>
-	An ongoing study of water quality in communities adjacent to these mining sites has found 1/3 of these wells contain one or more of these contaminants at unsafe levels - levels above the federal maximum contaminant levels (MCLs) set by the EPA. These standards consider health outcomes, costs, and whether
-	we have the technology that can remove the pollutant. These substances can be invisible, odorless, and tasteless so people unknowingly threaten their health for years.
-	  <br/><br/>
-	This collaborative project uses the scientific data on arsenic, lead, nitrate, and fluoride levels as reported by Arizona’s Department of Environmental Quality (ADEQ) Ambient Groundwater Monitoring Program from over 4,000 samples in three Arizona counties. Our team works with Project Harvest, which is a citizen-science project that trains communities most effected by mining to test the safety of their water and soil through sampling.  The counties we are working with are Gila, Pima, and Yavapai. Each county’s groundwater quality data is translated visually through the language of musical vibrations, allowing the water speak for itself.
+	<p ng-show="step ==0">
+	There are 24,183 mines in the state of Arizona. They go in and out of use depending on the market values of the materials they are extracting. Mining in Arizona, whether currently active or not, pollutes Arizona’s groundwater.
+<br/><br/>
+More than 330,000 people, or 5% of the state’s population gets its drinking water from private wells, which are not subject to the Environmental Protection Agency’s (EPA’s) Safe Drinking Water Act (SDWA) regulations. Sampling is not required and seldom conducted. Groundwater constitutes about 3.1 million acre-feet or 43 % of Arizona’s annual water use. The vast majority of groundwater pumped in the state is used to irrigate crops and for public water supplies.
+<br/><br/>
+An ongoing study of water quality in communities adjacent to these mining sites has found 1/3 of these wells contain one or more contaminants at unsafe levels - levels above the federal maximum contaminant levels (MCLs) set by the EPA. These standards consider health outcomes, costs, and whether technology that can remove the pollutant is available. These substances can be invisible, odorless, and tasteless so people can unknowingly threaten their health for years.
 	 </p>
-
-	<div class="about-header" ng-class="{ 'faded': !showRipple }" ng-click="showRipple = !showRipple; showIntro = false; showHistory = false; showWater = false;" >
+ 
+	<div style="cursor: pointer;" class="about-header" ng-class="{ 'faded': step != 1 }" ng-click="step = step == 1? step = -1 : step = 1;">
 		Ripple Effect
 	</div>
-	 <p ng-show="showRipple">
-	This installation is comprised of 15 speakers with trays attached to the surface, all containing shallow pools of water.  Each speaker connects to an amplifier that plays a distinct soundtrack.  The sound playing through the speakers vibrates the pools of water creating patterns depending on the frequency, pitch, volume, and bass parameters.  
-	 <br/><br/>
-	The music is a sonic translation of groundwater quality data captured in three counties in Arizona during a ten-year timespan (2005-2015). 
-	Each soundtrack represents a set of data points for one of four contaminants commonly found in Arizona groundwater because of local mining activity. The contaminants visualized in this project are arsenic, lead, nitrate, and fluoride. All are known to be harmful to human health depending on exposure and concentration.  We also show measurements of pH, which is a chemical property that affects the solubility and toxicity of chemicals and heavy metals in water.
-	 <br/><br/>
-	Each contaminant is represented by its own speaker playing a distinct instrument or sound determined by the data.  The different parameters of sound create vibrations which effect the wave patterns in the water.  Higher data values correlate to higher frequency and volume, whereas the lower values yield lower frequency and volume. In this sense, listening to the data soundtracks played together and witnessing the patterns of the water become in-sync or divergent – the viewer would get a sense of how one dataset relates to the other in time.  Since we are dividing these contaminants by county (5 data sets per three counties), the speaker groupings also relate to each other spatially as an indication of the geographical location of the water samples.  The piece also speaks about importance of consistency in data collection.  Our team purposely chose to leave the time periods where no data was collected, due to lack of funding and resources, silent - so that the gaps in environmental monitoring are revealed sonically.
-	 <br/><br/>
-	By personifying scientific data, Ripple Effect is making the invisible - visible.  Not only does it show the physicality of sound, but it also gives form to data which is not perceivable to the human eye.  The data is transformed from rows and columns of numeric values to a living, moving, musical entity that exists in space and communicates with the viewer as well as with itself - as it plays its history through its own innate form.  Data has a form, whether we are able to perceive it or not. This installation enables viewers to comprehend the story behind the data existing in water and how it is integrated into the chemical make-up and physical appearance of water - even when it occurs at a microscopic level.  When viewers are visually able to perceive the human impact of releasing chemicals into water, the source of life for all organisms on Earth- they will realize the fact that water is an over allocated, precious resource that humans must take responsibility for maintaining it’s quality, direction, and use.
-	 <br/><br/>
-	Arizona has a history of contamination and pollution due to mining activity and other point sources such as industrial waste, underground storage tanks, landfills, and wastewater treatment plants. This project examines two rural counties in Arizona that are in close proximity to a superfund site, which is characterized by the EPA as any land placed on the National Priorities List (NPL) in the US that has been contaminated by hazardous waste and identified as a candidate for cleanup because it poses a risk to human health and/or the environment.  As a part of this year-long project, our team will set up the installation in these counties to communicate the groundwater quality to local communities.  Participants will be asked to collect water to pour into the installation and watch as the water communicates their county’s personalized data over the past 10 years.
+	 <p ng-show="step ==1">
+	Ripple Effect is an art installation that visualizes ground water data collected on arsenic, lead, nitrate, and fluoride levels as reported by Arizona’s Department of Environmental Quality (ADEQ) Ambient Groundwater Monitoring Program from over 4,000 samples in three Arizona counties over a ten-year timespan. All of the contaminants measured are known to be harmful to human health depending on exposure and concentration. Our team works with Project Harvest, which is a citizen-science project that trains communities most effected by mining to test the safety of their water and soil through sampling. The counties we are working with are Gila, Pima, and Yavapai. 
 	 </p>
 
+<div style="cursor: pointer;" class="about-header" ng-class="{ 'faded': step != 2 }" ng-click="step = step == 2? step = -1 : step = 2;">
+		Transforming Data to Music 
+	</div>
+	 <p ng-show="step ==2">
+	 The ADEQ data is sorted for each contaminant from 2005-2015.  Our team then processes the ground water data through MAX/MSP, a software that computes the values of the data and assigns certain musical parameters to higher values.  Each data point collected in one year is played in a two-minute timespan, so the total timespan of the musical composition that plays 10 years of data is 5 minutes. The higher the amount of concentration of each contaminant, the higher the frequency, bass, and volume parameters assigned to the music. Lower contamination values yield lower frequency, bass and volume parameters. The musical score is then played through a speaker with a tray of water set on top.  The frequency, bass, and volume parameters alter the vibrations that occur in the water.  The higher values of data (which are greater levels of contamination) create more activity in the water.  Therefore, the more cymatic patterns (waves) appearing in the water, the greater the contamination of that data set.
+<br/> <br/>
+Each contaminant is represented by its own speaker playing a distinct instrument or sound determined by the data. In this sense, listening to the data soundtracks played together and witnessing the patterns of the water become in-sync or divergent – the viewer would get a sense of how one dataset relates to the other in time.
+</p>
 
-	<div class="about-header" ng-class="{ 'faded': !showHistory }" ng-click="showHistory = !showHistory; showRipple = false; showIntro = false; showWater = false;">
-		History of Contamination
+
+<div style="cursor: pointer;" class="about-header" ng-class="{ 'faded': step != 3 }" ng-click="step = step == 3? step = -1 : step = 3;">
+		Combining Analytics and Art
+	</div>
+	 <p ng-show="step ==3">
+By personifying scientific data, Ripple Effect is making the invisible - visible. Not only does it show the physicality of sound, but it also gives form to data which is not perceivable to the human eye. The data is transformed from rows and columns of numeric values to a living, moving, musical entity that exists in space and communicates with the viewer as well as with itself - as it plays its history through its own innate form. Data has a form, whether we are able to perceive it or not. This installation enables viewers to comprehend the story behind the data existing in water and how it is integrated into the chemical make-up and physical appearance of water - even when it occurs at a microscopic level. The viewer is invited to observe the human impact of releasing chemicals into water, the source of life for all organisms on Earth.
+<br/> <br/>
+Since we are dividing these contaminants by county (5 data sets per three counties), the speaker groupings also relate to each other spatially as an indication of the geographical location of the water samples. The piece also speaks about importance of consistency in data collection. Our team purposely chose to leave the time periods where no data was collected, due to lack of funding and resources, silent - so that the gaps in environmental monitoring are revealed sonically. 
+</p>
+
+	<div style="cursor: pointer;"  class="about-header" ng-class="{ 'faded': step != 4 }" ng-click="step = step == 4? step = -1 : step = 4;">
+		Arizona's Contamination
 	</div>
  
-	 <p ng-show="showHistory">
-	The active Asarco smelter and Ray Copper mine has a long history of contamination in the town of Hayden-Winkelman in Gila county. This rural town has a population of 1,188 people of whom 80.7% are Hispanic. Almost 100 years of smelting activities at this site has deposited lead, arsenic, and copper across residential and industrial areas. Arizona Department of Health Services (ADHS) performed a health assessment in 2002. Groundwater and soil were evaluated for exposure to arsenic. Approximately 650 properties in the two towns were sampled. Of these properties, just over 40% or 250 have required cleanup for arsenic, copper and/or lead. Air quality monitoring in the two towns measured elevated levels of arsenic, lead, copper, cadmium and chromium from site operations. The measured concentrations indicate that the arsenic in Hayden air is about 60 times above what would be expected in an area unaffected by smelting activities. The mine is currently exceeding the national ambient air quality standards for lead and sulfur dioxide.  A teacher told our team “some days there is a sour smell.  Your eyes burn and the air chokes your throat.”
-	 <br/><br/>
-	The inactive Iron King Mine and Humboldt Smelter (IKHS), which operated from the late 1800s until 1969 was a periodically active mine for gold, silver, copper, lead and zinc in the rural town of Dewey-Humboldt.  This town has a population of 3,914 people – 91.9% are white. A 4-million cubic-yard tailings pile remains at the Iron King Mine property. Tailings are wastes left over after saleable metals are removed from mined ore during processing. The tailings at the IKHS Site contain high levels of arsenic and lead. The slopes of the tailings pile are too steep for long-term stability. In 1964, part of the pile collapsed. The Humboldt Smelter dumped tailings into a wide swale, or depression in the land, and into an expansive flood plain in the Lower Chaparral Gulch. Today, these tailings and tailings from the Iron King Mine have mixed in the flood plain. The tailings are held back by a 25-foot concrete dam downstream of the former smelter. The dam is wedged in a narrow canyon upstream of the Agua Fria River which supplies municipal water to a neighboring town called Prescott. The extensive tailings are contaminated with arsenic and lead. 
-	 <br/><br/>
-	The third ground water data set we visualize is from South Tucson, who’s population is 5,836 people of whom 81.8% are Hispanic ethnicity. The groundwater in this area has been known to be tainted with cancer-causing trichloroethylene since 1981. In 1951, the U.S. Government contracted with a large industrial corporation to build and operate a military guided-missile systems facility adjacent to the Tucson airport. The operation used substantial quantities of industrial solvents to clean parts and circuitry necessary to assemble the finished products. According to plant design, water from the underground aquifer was pumped into process rooms to wash “spent” solvents. Without treatment for anything other than acid content, liquid waste containing trichloroethylene (TCE) and other hazardous solvents was then directed outside the plant to a “pond” area that consisted of unlined ditches and lagoons. Within a few years of the plant’s opening, residents near the airport noticed an unusual odor and taste in the water supplied to their homes from city wells directly adjacent to the plant. But it was not until 1981, some 30 years later, that an EPA-sponsored researcher first discovered that the community’s drinking water was highly contaminated with solvents that were officially classified as probable and suspected carcinogens. Concerned residents hired scientists whose studies revealed that several unusual forms of cancer – particularly among children in the area – were at almost epidemic levels. In the 1990s, two separate groups of lawsuits involving hundreds of residents alleged that TCE in the area’s drinking water triggered massive illnesses, including cancer, lupus, central nervous disorders and birth defects. In both cases, the residents won financial settlements from Hughes Aircraft Co. (who merged with Raytheon Missile Systems in the 1990s) and other parties held liable for dumping TCE into the ground as long ago as early as the 1940s. 1,4 Dioxane was also used as an industrial solvent in the airport area.  However, it wasn’t known to exist in the area’s groundwater until 2002. It is considered a probable carcinogen by the Environmental Protection Agency, but efforts didn’t begin to remove it from Tucson groundwater until 2014. There have been over 400 legal claims from people saying they have various cancers they believe came from the drinking water.  South-sider Linda Robles who has lived in the plume area for 55 years, describes her last decade as a procession of family illness. She says she’s lost a daughter to lupus and seen the illness strike two of her other seven children. She’s had a daughter and a grandson born with a cleft lip. Last year, her ex-husband was diagnosed with a cancerous kidney tumor.
-	</p>
+	 <p ng-show="step ==4">
+	Arizona has a history of contamination and pollution due to mining activity and other point sources such as industrial waste, underground storage tanks, landfills, and wastewater treatment plants. This project examines two rural counties in Arizona that are in close proximity to a superfund site, which is characterized by the EPA as any land placed on the National Priorities List (NPL) in the US that has been contaminated by hazardous waste and identified as a candidate for cleanup because it poses a risk to human health and/or the environment. As a part of this project, our team will set up the installation in these counties to communicate the groundwater quality to local communities.
+<br/><br/>
+The active Asarco smelter and Ray Copper mine has a long history of contamination in the town of Hayden-Winkelman in Gila county. This rural town has a population of 1,188 people of whom 80.7% are Hispanic. Almost 100 years of smelting activities at this site has deposited lead, arsenic, and copper across residential and industrial areas.
+<br/><br/>
+The inactive Iron King Mine and Humboldt Smelter (IKHS), which operated from the late 1800s until 1969 was a periodically active mine for gold, silver, copper, lead and zinc in the rural town of Dewey-Humboldt. This town has a population of 3,914 people – 91.9% are white. A 4-million cubic-yard tailings pile remains at the Iron King Mine property. Tailings are wastes left over after saleable metals are removed from mined ore during processing. The tailings at the IKHS Site contain high levels of arsenic and lead.
+<br/><br/>
+The third ground water data set we visualize is from the Tucson International Airport Area in South Tucson, who’s population is 5,836 people of whom 81.8% are Hispanic ethnicity. The groundwater in this area has been known to be tainted with cancer-causing trichloroethylene since 1981.
 
 
-	<div class="about-header" ng-class="{ 'faded': !showWater }" ng-click="showWater = !showWater; showRipple = false; showHistory = false; showIntro = false;" >
+	<div style="cursor: pointer;"  class="about-header" ng-class="{ 'faded': step != 5 }" ng-click="step = step == 5? step = -1 : step = 5;" >
 		Let Water Be Water
 	</div>
-	<p ng-show="showWater">
-	In an ideal world, humans could just “let water be water.”  Water naturally replenishes its surface availability and filters contaminants out through the water cycle. However, as we enter the Anthropocene, humans are no longer symbiotically engaged with their environment, but have evolved into a parasitic partner with the nonhuman world.  The relationship between humans and nature is a fragile process that has unfolded historically in disparaging, irreversible ways. Our environment is in constant flux, even more so due to our unsustainable activities.  It is our responsibility to decipher our effect on our vital resources, identify the behaviors we need to change, and allow all people to have equal access to a healthy, livable environment.
+	<p ng-show="step ==5">
+	In an ideal world, humans could just “let water be water.” Water naturally replenishes its surface availability and filters contaminants out through the water cycle. However, as we enter the Anthropocene, humans are no longer symbiotically engaged with their environment, but have evolved into a parasitic partner with the nonhuman world. The relationship between humans and nature is a fragile process that has unfolded historically in disparaging, irreversible ways. Our environment is in constant flux, even more so due to our unsustainable activities. Water is an over allocated, precious resource that humans must take responsibility for maintaining it’s quality, direction, and use. It is our responsibility to decipher our effect on our vital resources, identify the behaviors we need to change, and allow all people to have equal access to a healthy, livable environment.
 	</p>
  
 
@@ -122,19 +129,24 @@
 <div class="row" >
 	<div class="col-12 col-md-4" 0px;">
 		<a href="http://ramirez-andreotta.faculty.arizona.edu/">
-		<img style="height: 200px; margin-top: 30px; margin-bottom: 50px;" src="assets/img/ieshrl.png"/>
+		<img style="height: 170px; margin-top: 30px; margin-bottom: 50px;" src="assets/img/ieshrl.png"/>
 	</a>
 	</div>
 	<div class="col-12 col-md-4" 0px;">
 		<a href="http://a2ru.org/">
-		<img style="height: 70px; margin-top: 30px; margin-bottom: 50px;" src="assets/img/a2ru.png"/>
+		<img style="height: 60px; margin-top: 30px; margin-bottom: 15px;" src="assets/img/a2ru.png"/>
+	</a>
+	<a href="https://swes.cals.arizona.edu/">
+		<img style="height: 60px; margin-top: 30px; margin-bottom: 50px;" src="assets/img/swes.png"/>
 	</a>
 	</div>
 
 	<div class="col-12 col-md-4" 0px;">
 		<a href="http://art.arizona.edu/">
-		<img style="height: 70px; margin-top: 30px; margin-bottom: 50px;" src="assets/img/uaart.png"/>
+		<img style="height: 60px; margin-top: 30px; margin-bottom: 50px;" src="assets/img/uaart.png"/>
 	</a>
+
+
 	</div>
 
 	
