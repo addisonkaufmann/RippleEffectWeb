@@ -1,10 +1,4 @@
-app.controller('navbarController', function($scope, $window){
-            console.log("hey");
 
-    $scope.toggleNav = function(){
-        console.log("hey");
-    };
-});
 
 
 app.controller('scotchController', function($scope) {
@@ -199,6 +193,18 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
 
 app.controller('homeController', ['$scope', '$window', '$sce', '$state', '$stateParams', function($scope, $window, $sce, $state, $stateParams){
 
+    $scope.isNarrowScreen = $window.innerWidth < 992;
+
+    angular.element($window).on('resize', function () {
+        if (!$scope.isNarrowScreen && $window.innerWidth < 992){
+            console.log("narrow");
+            $scope.isNarrowScreen = true;
+            $scope.$apply();
+        } else if ($scope.isNarrowScreen && $window.innerWidth >= 992) {
+            $scope.isNarrowScreen = false;
+            $scope.$apply();
+        }
+    });
 
     $scope.counties = ['Pima', 'Gila', 'Yavapai'];
     $scope.contaminants = ['Arsenic', 'Lead', 'Nitrate', 'Fluoride', 'pH'];
