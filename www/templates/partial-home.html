@@ -1,4 +1,4 @@
-<div class="animated fadeIn" ng-if="!isNarrowScreen">
+<div class="animated fadeIn" ng-if="!isNarrowScreen" style="overflow-x: hidden;">
 	<div class="row no-gutters">
 		<div ng-repeat="c in contaminants" class="col-xs-2 col column-label">{{c}}</div>
 	</div>
@@ -120,6 +120,12 @@
             </button>
         </div>
         <div class="bg-row-label">YAVAPAI</div>
+    </div>
+
+    <div class="row" style="background-color: white; padding-top: 70px; padding-bottom: 70px;">
+         <div class="col-10 offset-1" >
+            <img class="img-fluid" src="assets/img/Process.png" />
+        </div>
     </div>
 </div>
 
@@ -253,4 +259,5 @@
     </div>
     <div class="row-label">{{contaminants[4]}}</div>
 </div>
+
 </div>

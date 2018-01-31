@@ -1,6 +1,17 @@
 @import "partials/colors";
 @import "partials/fonts";
 
+a {
+  text-decoration: none;
+  color:$teal-light;
+}
+
+a:hover {
+  color: white;
+}
+
+
+
 .faded {
   opacity: 0.6;
   transition: opacity 0.4s, transform 0.4s;
