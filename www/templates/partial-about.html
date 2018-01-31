@@ -3,25 +3,26 @@
 		Introduction
 	</div>
 
-	<p ng-show="step ==0">
+
+	<p class="textColumns" ng-show="step ==0">
 	There are 24,183 mines in the state of Arizona. They go in and out of use depending on the market values of the materials they are extracting. Mining in Arizona, whether currently active or not, pollutes Arizona’s groundwater.
-<br/><br/>
-More than 330,000 people, or 5% of the state’s population gets its drinking water from private wells, which are not subject to the Environmental Protection Agency’s (EPA’s) Safe Drinking Water Act (SDWA) regulations. Sampling is not required and seldom conducted. Groundwater constitutes about 3.1 million acre-feet or 43 % of Arizona’s annual water use. The vast majority of groundwater pumped in the state is used to irrigate crops and for public water supplies.
-<br/><br/>
-An ongoing study of water quality in communities adjacent to these mining sites has found 1/3 of these wells contain one or more contaminants at unsafe levels - levels above the federal maximum contaminant levels (MCLs) set by the EPA. These standards consider health outcomes, costs, and whether technology that can remove the pollutant is available. These substances can be invisible, odorless, and tasteless so people can unknowingly threaten their health for years.
+	<br/><br/>
+	More than 330,000 people, or 5% of the state’s population gets its drinking water from private wells, which are not subject to the Environmental Protection Agency’s (EPA’s) Safe Drinking Water Act (SDWA) regulations. Sampling is not required and seldom conducted. Groundwater constitutes about 3.1 million acre-feet or 43 % of Arizona’s annual water use. The vast majority of groundwater pumped in the state is used to irrigate crops and for public water supplies.
+	<br/><br/>
+	An ongoing study of water quality in communities adjacent to these mining sites has found 1/3 of these wells contain one or more contaminants at unsafe levels - levels above the federal maximum contaminant levels (MCLs) set by the EPA. These standards consider health outcomes, costs, and whether technology that can remove the pollutant is available. These substances can be invisible, odorless, and tasteless so people can unknowingly threaten their health for years.
 	 </p>
  
 	<div style="cursor: pointer;" class="about-header" ng-class="{ 'faded': step != 1 }" ng-click="step = step == 1? step = -1 : step = 1;">
 		Ripple Effect
 	</div>
-	 <p ng-show="step ==1">
+	 <p class="textColumns" ng-show="step ==1">
 	Ripple Effect is an art installation that visualizes ground water data collected on arsenic, lead, nitrate, and fluoride levels as reported by Arizona’s Department of Environmental Quality (ADEQ) Ambient Groundwater Monitoring Program from over 4,000 samples in three Arizona counties over a ten-year timespan. All of the contaminants measured are known to be harmful to human health depending on exposure and concentration. Our team works with <a href="https://projectharvest.arizona.edu/">Project Harvest</a>, which is a citizen-science project that trains communities most effected by mining to test the safety of their water and soil through sampling. The counties we are working with are Gila, Pima, and Yavapai. 
 	 </p>
 
 <div style="cursor: pointer;" class="about-header" ng-class="{ 'faded': step != 2 }" ng-click="step = step == 2? step = -1 : step = 2;">
 		Transforming Data to Music 
 	</div>
-	 <p ng-show="step ==2">
+	 <p class="textColumns" ng-show="step ==2">
 	 The ADEQ data is sorted for each contaminant from 2005-2015.  Our team then processes the ground water data through MAX/MSP, a software that computes the values of the data and assigns certain musical parameters to higher values.  Each data point collected in one year is played in a two-minute timespan, so the total timespan of the musical composition that plays 10 years of data is 5 minutes. The higher the amount of concentration of each contaminant, the higher the frequency, bass, and volume parameters assigned to the music. Lower contamination values yield lower frequency, bass and volume parameters. The musical score is then played through a speaker with a tray of water set on top.  The frequency, bass, and volume parameters alter the vibrations that occur in the water.  The higher values of data (which are greater levels of contamination) create more activity in the water.  Therefore, the more cymatic patterns (waves) appearing in the water, the greater the contamination of that data set.
 <br/> <br/>
 Each contaminant is represented by its own speaker playing a distinct instrument or sound determined by the data. In this sense, listening to the data soundtracks played together and witnessing the patterns of the water become in-sync or divergent – the viewer would get a sense of how one dataset relates to the other in time.
@@ -31,7 +32,7 @@ Each contaminant is represented by its own speaker playing a distinct instrument
 <div style="cursor: pointer;" class="about-header" ng-class="{ 'faded': step != 3 }" ng-click="step = step == 3? step = -1 : step = 3;">
 		Combining Analytics and Art
 	</div>
-	 <p ng-show="step ==3">
+	 <p class="textColumns" ng-show="step ==3">
 By personifying scientific data, Ripple Effect is making the invisible - visible. Not only does it show the physicality of sound, but it also gives form to data which is not perceivable to the human eye. The data is transformed from rows and columns of numeric values to a living, moving, musical entity that exists in space and communicates with the viewer as well as with itself - as it plays its history through its own innate form. Data has a form, whether we are able to perceive it or not. This installation enables viewers to comprehend the story behind the data existing in water and how it is integrated into the chemical make-up and physical appearance of water - even when it occurs at a microscopic level. The viewer is invited to observe the human impact of releasing chemicals into water, the source of life for all organisms on Earth.
 <br/> <br/>
 Since we are dividing these contaminants by county (5 data sets per three counties), the speaker groupings also relate to each other spatially as an indication of the geographical location of the water samples. The piece also speaks about importance of consistency in data collection. Our team purposely chose to leave the time periods where no data was collected, due to lack of funding and resources, silent - so that the gaps in environmental monitoring are revealed sonically. 
@@ -41,7 +42,7 @@ Since we are dividing these contaminants by county (5 data sets per three counti
 		Arizona's Contamination
 	</div>
  
-	 <p ng-show="step ==4">
+	 <p class="textColumns" ng-show="step ==4">
 	Arizona has a history of contamination and pollution due to mining activity and other point sources such as industrial waste, underground storage tanks, landfills, and wastewater treatment plants. This project examines two rural counties in Arizona that are in close proximity to a superfund site, which is characterized by the EPA as any land placed on the National Priorities List (NPL) in the US that has been contaminated by hazardous waste and identified as a candidate for cleanup because it poses a risk to human health and/or the environment. As a part of this project, our team will set up the installation in these counties to communicate the groundwater quality to local communities.
 <br/><br/>
 <a href="http://www.azdeq.gov/superfund/AsarcoHaydenPlant">The active Asarco smelter and Ray Copper mine</a> has a long history of contamination in the town of Hayden-Winkelman in Gila county. This rural town has a population of 1,188 people of whom 80.7% are Hispanic. Almost 100 years of smelting activities at this site has deposited lead, arsenic, and copper across residential and industrial areas.
@@ -54,7 +55,7 @@ The third ground water data set we visualize is from the <a href="http://www.azd
 	<div style="cursor: pointer;"  class="about-header" ng-class="{ 'faded': step != 5 }" ng-click="step = step == 5? step = -1 : step = 5;" >
 		Let Water Be Water
 	</div>
-	<p ng-show="step ==5">
+	<p class="textColumns" ng-show="step ==5">
 	In an ideal world, humans could just “let water be water.” Water naturally replenishes its surface availability and filters contaminants out through the water cycle. However, as we enter the Anthropocene, humans are no longer symbiotically engaged with their environment, but have evolved into a parasitic partner with the nonhuman world. The relationship between humans and nature is a fragile process that has unfolded historically in disparaging, irreversible ways. Our environment is in constant flux, even more so due to our unsustainable activities. Water is an over allocated, precious resource that humans must take responsibility for maintaining it’s quality, direction, and use. It is our responsibility to decipher our effect on our vital resources, identify the behaviors we need to change, and allow all people to have equal access to a healthy, livable environment.
 	</p>
  
