@@ -1,0 +1,1080 @@
+﻿[
+ {
+   "Date": "1/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/19/2005",
+   "Name": "Lead",
+   "Value": 0.0025,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/19/2005",
+   "Name": "Lead",
+   "Value": 0.0025,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/19/2005",
+   "Name": "Lead",
+   "Value": 0.0025,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2005",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2006",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/7/2007",
+   "Name": "Lead",
+   "Value": 0.29,
+   "Units": "mg/l",
+   "Exceeds": true
+ },
+ {
+   "Date": "5/24/2007",
+   "Name": "Lead",
+   "Value": 0.06,
+   "Units": "mg/l",
+   "Exceeds": true
+ },
+ {
+   "Date": "6/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/5/2007",
+   "Name": "Lead",
+   "Value": 0.0025,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/5/2007",
+   "Name": "Lead",
+   "Value": 0.0025,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/5/2007",
+   "Name": "Lead",
+   "Value": 0.0025,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/5/2007",
+   "Name": "Lead",
+   "Value": 0.0025,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2007",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/18/2008",
+   "Name": "Lead",
+   "Value": 0.041,
+   "Units": "mg/l",
+   "Exceeds": true
+ },
+ {
+   "Date": "6/24/2008",
+   "Name": "Lead",
+   "Value": 0.527,
+   "Units": "mg/l",
+   "Exceeds": true
+ },
+ {
+   "Date": "7/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2008",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2009",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2010",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2011",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/7/2012",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/7/2012",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/8/2012",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2012",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/17/2013",
+   "Name": "Lead",
+   "Value": 0.661,
+   "Units": "mg/l",
+   "Exceeds": true
+ },
+ {
+   "Date": "8/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2013",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2014",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "1/1/2015",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "2/1/2015",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "3/1/2015",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "4/1/2015",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "5/1/2015",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "6/1/2015",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "7/1/2015",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/10/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/10/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/10/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/10/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/10/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/11/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/11/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/11/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "8/11/2015",
+   "Name": "Lead",
+   "Value": 0.00064,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/21/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/22/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/22/2015",
+   "Name": "Lead",
+   "Value": 0.00065,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/22/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "9/22/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "10/22/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/10/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "11/10/2015",
+   "Name": "Lead",
+   "Value": 0.0005,
+   "Units": "mg/l",
+   "Exceeds": false
+ },
+ {
+   "Date": "12/1/2015",
+   "Name": "Lead",
+   "Value": 0,
+   "Units": "mg/l",
+   "Exceeds": false
+ }
+]
