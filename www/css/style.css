@@ -1,126 +1,330 @@
-.fill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; }
-  .fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%; }
+@font-face {
+  font-family: Charlevoix-Black;
+  src: url("../assets/fonts/CharlevoixPro-Black.otf") format("opentype"); }
 
-.logo {
+@font-face {
+  font-family: Charlevoix-Bold;
+  src: url("../assets/fonts/CharlevoixPro-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-ExtraBold;
+  src: url("../assets/fonts/CharlevoixPro-ExtraBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-Light;
+  src: url("../assets/fonts/CharlevoixPro-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-Medium;
+  src: url("../assets/fonts/CharlevoixPro-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-Regular;
+  src: url("../assets/fonts/CharlevoixPro-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-Thin;
+  src: url("../assets/fonts/CharlevoixPro-Thin.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gagalin-Regular;
+  src: url("../assets/fonts/Gagalin-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-Light;
+  src: url("../assets/fonts/Geogrotesque-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-Medium;
+  src: url("../assets/fonts/Geogrotesque-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-Regular;
+  src: url("../assets/fonts/Geogrotesque-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-RegularItalic;
+  src: url("../assets/fonts/Geogrotesque-RegularItalic.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-SemiBold;
+  src: url("../assets/fonts/Geogrotesque-SemiBold.otf") format("opentype"); }
+
+.faded {
+  opacity: 0.6;
+  transition: opacity 0.4s, transform 0.4s; }
+
+.faded:hover {
+  opacity: 1; }
+
+.coloverlay {
+  background-color: rgba(233, 33, 33, 0.4);
+  border: 1px solid red;
   height: 100%; }
 
-icon-white {
-  font-color: white; }
-
-.overlay-container {
-  position: relative;
-  width: 100%; }
-
-.overlay-item, .overlay-tab, .overlay-text, .overlay-row, .overlay-footer {
+.bg-row-label {
+  text-align: left;
+  font-family: Charlevoix-Bold;
+  text-transform: uppercase;
+  color: black;
+  font-size: 70pt;
+  line-height: 70px;
+  visibility: hidden;
   position: absolute;
-  margin: auto;
+  margin-top: 30px;
+  height: inherit;
+  color: black;
+  opacity: 0.7; }
+
+.bg-Fluoride {
+  background-color: #337d7b; }
+
+.bg-Arsenic {
+  background-color: #5fbcbf; }
+
+.bg-Lead {
+  background-color: #8fc495; }
+
+.bg-Nitrate {
+  background-color: #266067; }
+
+.bg-pH {
+  background-color: #8bb5ad; }
+
+.color-Fluoride {
+  color: #337d7b; }
+
+.color-Arsenic {
+  color: #5fbcbf; }
+
+.color-Lead {
+  color: #8fc495; }
+
+.color-Nitrate {
+  color: #266067; }
+
+.color-pH {
+  color: #8bb5ad; }
+
+.human-effect-title {
+  color: #3eac92;
+  text-transform: uppercase;
+  font-family: Charlevoix-Bold;
+  font-size: 100px;
   text-align: center; }
 
-.overlay-tab {
-  top: 0;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  bottom: 85%;
-  border-radius: 0px 0px 15px 15px;
-  background-color: rgba(255, 255, 255, 0.7); }
+.human-effect-quote {
+  color: white;
+  font-family: Charlevoix-Bold;
+  font-size: 30px;
+  text-align: center;
+  opacity: 0.7; }
 
-.overlay-text {
-  bottom: 0;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  top: 70%;
-  color: white; }
+.human-effect-map {
+  width: 100%;
+  float: right; }
 
-.overlay-row {
-  bottom: 0;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  top: 85%;
-  color: white; }
+.human-effect-map-legend {
+  font-family: Geogrotesque-Regular;
+  color: white;
+  font-size: 35px; }
 
-.overlay-footer {
-  top: 0;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  top: 94%;
-  color: white; }
+.human-effect-map-legend-2 {
+  font-family: Geogrotesque-Regular;
+  color: white;
+  font-size: 28px;
+  max-width: 75%;
+  line-height: 38px;
+  padding-bottom: 10px; }
 
-.vignette img {
-  display: block; }
+.legend-div {
+  margin-bottom: 25px; }
 
-.vignette:after {
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  content: '';
+.human-effect-map-credits {
+  font-family: Geogrotesque-Regular;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 30px; }
+
+.human-effect-text {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 5px solid #3eac92;
+  padding-top: 5px;
+  font-family: Geogrotesque-Regular;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px; }
+
+.about-header {
+  margin-right: 20px;
+  color: #3eac92;
+  font-family: Charlevoix-Bold;
+  font-size: 36px; }
+
+.bold-colored {
+  color: #3eac92;
+  font-weight: bold; }
+
+.text-reference {
+  font-size: 14px;
+  color: #3eac92; }
+
+.map-1-key-1 {
+  height: 23px;
+  margin-left: 17px; }
+
+.about-text {
+  color: white;
+  font-family: Geogrotesque-Regular; }
+
+.map-1-key-2 {
+  height: 140px;
+  margin-left: 15px; }
+
+.map-1-key-3 {
+  height: 65px; }
+
+.map-2-key-1 {
+  height: 160px;
+  margin-left: 8px; }
+
+.counties {
+  height: 55px;
+  margin-bottom: 25px; }
+
+.nav-color {
+  color: #1b2955; }
+
+.no-margin {
+  margin: 0; }
+
+.wide-container {
+  height: 28vh;
+  max-height: 28vh;
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+.bg-teal-light {
+  background-color: #3eac92; }
+
+.column-label {
+  padding: 10px;
+  font-family: Charlevoix-Bold;
+  color: #3eac92;
+  font-size: 20pt;
+  text-align: center; }
+
+.row-label {
+  padding-top: 15px;
+  padding-left: 10px;
+  text-align: left;
+  font-family: Geogrotesque-Regular;
+  color: black;
+  font-size: 40pt;
+  visibility: hidden;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
+  height: inherit;
+  opacity: 0.7; }
+
+.custom-nav {
+  height: 100px;
+  border-bottom: 8px solid #3eac92; }
+
+.graph-footer {
+  background-color: white;
+  margin-bottom: 0; }
+
+h1, h2, h3, h4, h5, h6, a.button {
+  text-transform: uppercase; }
+
+.detail-header {
+  text-transform: none;
+  color: white; }
+
+.font-black {
+  font-family: Charlevoix-Black;
+  color: #5fbcbf; }
+
+.detail-title {
+  font-family: Charlevoix-Bold;
+  text-transform: none;
+  color: white; }
+
+.graph-footer-title {
+  font-family: Charlevoix-Bold;
+  text-transform: none;
+  margin-bottom: 0; }
+
+.p-text {
+  font-family: Geogrotesque-Regular; }
+
+.oneVideoWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   height: 100%;
-  box-shadow: inset 0rem -35rem 15rem -13rem rgba(0, 0, 0, 0.7); }
+  width: 100%; }
 
-.light-padding {
-  padding: 1% 1% 1% 1%; }
-
-.tile {
+.oneVideoWrapper iframe {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 25vw; }
+  height: 100%; }
 
-.tile-text {
-  font-size: 130%;
-  color: white;
-  text-align: center;
+.videoWrapper {
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
 
-.social-footer {
-  color: white;
-  text-align: center;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 3%;
-  padding-top: 3%; }
-  .social-footer .title {
-    padding-bottom: 2%;
-    font-size: 130%; }
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
-.light-green {
-  background-color: #81bc5f; }
+.row-col-hover {
+  background-color: black;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
 
-.yellow {
-  background-color: #f8dc54; }
+.row-hover:hover .row-col-hover {
+  opacity: 0.5; }
 
-.orange {
-  background-color: #f6a049; }
+.row-hover:hover .row-label {
+  visibility: visible; }
 
-.red {
-  background-color: #f4704a; }
+.row-hover:hover .bg-row-label {
+  visibility: visible; }
 
-.brown {
-  background-color: #ce9351; }
+.video-county {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #3eac92;
+  opacity: 0.5;
+  color: black;
+  font-family: Charlevoix-Bold;
+  text-align: center; }
 
-.purple {
-  background-color: #ba97bf; }
+.row-hover:hover {
+  background-color: #337d7b; }
 
-.blue {
-  background-color: #45c0df; }
+.team-img {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
 
-.dark-green {
-  background-color: #56ae7c; }
+.team-col:hover .team-img {
+  opacity: 1; }

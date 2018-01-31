@@ -1,0 +1,51 @@
+@font-face {
+  font-family: Charlevoix-Black;
+  src: url("../assets/fonts/CharlevoixPro-Black.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-Bold;
+  src: url("../assets/fonts/CharlevoixPro-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-ExtraBold;
+  src: url("../assets/fonts/CharlevoixPro-ExtraBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-Light;
+  src: url("../assets/fonts/CharlevoixPro-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-Medium;
+  src: url("../assets/fonts/CharlevoixPro-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-Regular;
+  src: url("../assets/fonts/CharlevoixPro-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Charlevoix-Thin;
+  src: url("../assets/fonts/CharlevoixPro-Thin.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gagalin-Regular;
+  src: url("../assets/fonts/Gagalin-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-Light;
+  src: url("../assets/fonts/Geogrotesque-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-Medium;
+  src: url("../assets/fonts/Geogrotesque-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-Regular;
+  src: url("../assets/fonts/Geogrotesque-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-RegularItalic;
+  src: url("../assets/fonts/Geogrotesque-RegularItalic.otf") format("opentype"); }
+
+@font-face {
+  font-family: Geogrotesque-SemiBold;
+  src: url("../assets/fonts/Geogrotesque-SemiBold.otf") format("opentype"); }

@@ -1,0 +1,352 @@
+<!-- <h1 style="color: white;">{{message}}</h1> -->
+
+<div class="row no-gutters" style="background-color: #3eac92; padding: 10px; padding-top: 0;">
+	<div class="col-xs-12 col-md-4" style="position: relative;" >
+		<div class="oneVideoWrapper">
+                <iframe class="iframe-hover" id="player1" src="https://player.vimeo.com/video/240325679?autoplay=1&loop=1&color=ffffff&autopause=0&title=0&byline=0&portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe class="iframe-hover">
+            </div>
+        <h1 class="video-county">{{county}}</h1>
+	</div>
+	<div class="col-xs-12 col-md-8" >
+		<canvas style="background-color: white; margin-top: 4px;" id="line" class="chart chart-line" chart-data="data"
+		chart-labels="labels" chart-series="series" chart-options="options"
+		chart-dataset-override="datasetOverride" chart-click="onClick" chart-colors="colors">
+		</canvas>
+	</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid graph-footer p-text" ng-class="['color-' + contaminant]">
+	<div class="container">
+		<div class="row">
+			<div class="col-6 col-md-3">
+				<h1 class="graph-footer-title">{{contaminant}}</h1>
+				<p>{{county}} County Exceedances</p>
+			</div>
+
+			<div class="col-6 col-md-3">
+				<h1 class="graph-footer-title">MCL</h1>
+				<p>{{mcl}} units</p>
+			</div>
+
+			<div class="col-12 col-md-6" style="text-align: left; float: left;">
+				<div style="height: 100px;width: 100px; float: left; margin-right: 20px;">
+					<canvas id="pie" class="chart chart-pie" style="height: 50px;width: 50px; " 
+	  					chart-data="pieData" chart-labels="[ 'Exceedances', 'Non-exceedances' ]" chart-colors="pieColors" chart-options="pieOptions" >
+					</canvas> 
+				</div>
+				<h1 class="graph-footer-title">
+				{{piePercent}}% of samples exceed the MCL</h1>
+<!-- 				<p>{{county}} County Exceedances</p>
+ -->			</div>
+
+		</div>
+		
+	</div>
+
+</div>
+
+<div class="jumbotron jumbotron-fluid p-text" ng-class="['bg-' + contaminant]">
+	<div class="container" ng-if="contaminant == 'Fluoride'">
+		<h1 class="detail-title">What is {{contaminant}}?</h1>
+		<div class="row">
+			<div class="col-lg-6">
+				<p>Fluorides, hydrogen fluoride, and fluorine are chemically
+					related. Fluorine is a naturally-occurring, pale yellow-green gas
+					with a sharp odor. It combines with metals to make fluorides
+					such as sodium fluoride and calcium fluoride, both white solids.
+					Sodium fluoride dissolves easily in water, but calcium fluoride
+					does not. Fluorine also combines with hydrogen to make
+					hydrogen fluoride, a colorless gas. Hydrogen fluoride dissolves
+					in water to form hydrofluoric acid. Fluorine and hydrogen
+					fluoride are used to make certain chemical compounds.
+					Hydrofluoric acid is used for etching glass. Other fluoride
+					compounds are used in making steel, chemicals, ceramics,
+					lubricants, dyes, plastics, and pesticides. Fluorides are often
+					added to drinking water supplies and to a variety of dental
+					products, including toothpaste and mouth rinses, to prevent
+					dental cavities.
+				</p>
+				<h4 class="detail-header">What happens to fluoride when it enters the environment?</h4>
+				<p>
+					Fluorine cannot be destroyed in the environment; it can only
+					change its form. Fluorine forms salts with minerals in soil.
+					Hydrogen fluoride gas will be absorbed by rain and into clouds
+					and fog to form hydrofluoric acid, which will fall to the ground.
+					Fluorides released to the air from volcanoes and industry are
+					carried by wind and rain to nearby water, soil, and food sources.
+					Fluorides in water and soil will form strong associations with
+					sediment or soil particles. Fluorides will accumulate in plants
+					and animals. In animals, the fluoride accumulates primarily in
+					the bones or shell rather than in soft tissues.
+				</p>
+			</div>
+			<div class="col-lg-6">
+					<h4 class="detail-header">How might I be exposed to fluoride?</h4> 
+					<p>The general population
+						can be exposed to fluorides in contaminated air, food, drinking
+						water and soil. People living in communities with fluoridated
+						water or high levels of naturally-occurring fluoride may be
+						exposed to higher levels. People who work or live near industries
+						where fluoride containing substances are used may be
+						exposed to higher levels.
+					</p>
+					<h4 class="detail-header">How can fluoride affect my health?</h4>
+					<p>
+						 Small amounts of fluoride
+						help prevent tooth cavities, but high levels can harm your
+						health. In adults, exposure to high levels of fluoride can result
+						in denser bones. However, if exposure is high enough, these
+						bones may be more fragile and brittle and there may be a
+						greater risk of breaking the bone. In animals, exposure to
+						extremely high doses of fluoride can result in decreased
+						fertility and sperm and testes damage.
+						Fluorine and hydrogen fluoride are very irritating to the skin,
+						eyes, and respiratory tract. At high levels, such as may occur
+						through exposure from an industrial accident, hydrogen
+						fluoride may also damage the heart.
+					</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container" ng-if="contaminant == 'Arsenic'">
+		<h1 class="detail-title">What is {{contaminant}}?</h1>
+		<div class="row">
+			<div class="col-lg-6">
+				<p>Arsenic is a solid substance (metalloid) naturally existing in the
+				Earth’s crust and in crushed rock. Arsenic exposure is natural
+				but can be aggravated by human activities. In the environment,
+				arsenic is combined with oxygen, chlorine, and sulfur to form
+				inorganic arsenic compounds. We are exposed to arsenic in two
+				chemical forms: Inorganic: Varying amounts of this poisonous
+				(toxic forms) form can be found naturally in geologic materials
+				(soils, rocks, aquifer materials) and in ground and surface
+				water, which may also be impacted by mining and industrial
+				wates and arsenical pesticides). Organic (arsenic compounds
+				that contain carbon): Varying amounts of this non-poisonous
+				(low-toxicity)form can be found in sources such as animals,
+				plants, fish and seafood.
+				</p>
+				<h4 class="detail-header">What happens to arsenic when it enters the environment?</h4>
+				<p>
+				Arsenic occurs naturally in soil and minerals and may enter the
+				air, water, and land from wind-blown dust and may get into
+				water from runoff and leaching. Arsenic cannot be destroyed in
+				the environment. It can only change its form. Rain and snow
+				remove arsenic dust particles from the air. Many common
+				arsenic compounds can dissolve in water. Most of the arsenic in
+				water will ultimately end up in soil or sediment. Fish and
+				shellfish can accumulate arsenic; most of this arsenic is in an
+				organic form called arsenobetaine that is much less harmful.
+				</p>
+			</div>
+			<div class="col-lg-6">
+					<h4 class="detail-header">How might I be exposed to arsenic? </h4> 
+					<p>Ingesting small amounts
+						present in your food and water or breathing air containing
+						arsenic. Breathing sawdust or burning smoke from wood
+						treated with arsenic. Living in areas with unusually high natural
+						levels of arsenic in rock. Working in a job that involves arsenic
+						production or use, such as copper or lead smelting, wood
+						treating, or pesticide application.
+					</p>
+					<h4 class="detail-header">How can arsenic affect my health?</h4>
+					<p>
+						 Breathing high levels of
+						inorganic arsenic can give you a sore throat or irritated lungs.
+						Ingesting very high levels of arsenic can result in death.
+						Exposure to lower levels can cause nausea and vomiting,
+						decreased production of red and white blood cells, abnormal
+						heart rhythm, damage to blood vessels, and a sensation of
+						“pins and needles” in hands and feet. Ingesting or breathing
+						low levels of inorganic arsenic for a long time can cause a
+						darkening of the skin and the appearance of small “corns” or
+						“warts” on the palms, soles, and torso. Skin contact with
+						inorganic arsenic may cause redness and swelling. Several
+						studies have shown that ingestion of inorganic arsenic can
+						increase the risk of skin cancer and cancer in the liver, bladder,
+						and lungs. Inhalation of inorganic arsenic can cause increased
+						risk of lung cancer.
+					</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container" ng-if="contaminant == 'Nitrate'">
+		<h1 class="detail-title">What is {{contaminant}}?</h1>
+		<div class="row">
+			<div class="col-lg-6">
+				<p>Plants and animals require nitrogen to live and grow. However,
+				nitrogen gas, which is abundant in the air we breathe, must
+				first be converted to nitrogen compounds that can be used by
+				plants and animals as sources of nitrogen. This process is
+				called nitrogen fixation. Nitrate and nitrite are two of the
+				nitrogen compounds that are used by plants and animals and
+				eventually return to the air as nitrogen gas. Nitrate and nitrite
+				can also be produced in the body.
+				In nature, plants utilize nitrate as an essential nutrient. In
+				commerce, the majority of nitrate is used in inorganic fertilizers.
+				Nitrate and nitrite are also used in food preservation, some
+				pharmaceutical drugs, and the production of munitions and
+				explosives.
+				</p>
+				<h4 class="detail-header">What happens to nitrate when it enters the environment?</h4>
+				<p>
+					Nitrogen exists naturally in soils, typically bound to organic
+					matter and mineral soil material. Available forms of nitrogen,
+					including nitrate and nitrite, are present in soils, water, air,
+					plants, and meat products. In nature, nitrate and nitrite can be
+					found in igneous and volcanic rocks. Nitrate and nitrite salts
+					completely dissolve in water. Bacteria in soil and plants use
+					oxygen to change nitrite into more stable nitrate, which can be
+					converted back to nitrite by other bacteria when oxygen is
+					lacking. Animal wastes and nitrogen-containing fertilizers
+					increase concentrations of nitrate in the environment.
+				</p>
+			</div>
+			<div class="col-lg-6">
+					<h4 class="detail-header">How might I be exposed to nitrate?</h4> 
+					<p>Nitrate and nitrite are
+					found in diets through vegetables (especially celery, lettuce,
+					and spinach), fruits, cured meats, fish, dairy products, beers,
+					and cereals. Some meats and meat products contain sodium
+					nitrate and/or sodium nitrite as preservatives. Your body
+					naturally produces some nitrate and nitrite. You can be
+					exposed by drinking water from wells containing nitrate from
+					sources such as animal waste and/or fertilizer runoff.
+					Release of nitrate and/or nitrite to soil and water at waste
+					disposal sites could result in contamination of drinking water
+					sources and increased uptake by plants you eat.
+					Inhaling nitrate or nitrite is not a likely exposure route of
+					concern for the general population, although nitrates are
+					sometimes inhaled to relieve painful angina attacks.
+					</p>
+					<h4 class="detail-header">How can nitrate affect my health?</h4>
+					<p> Most people are not
+					exposed to levels that would cause adverse health effects.
+					Some people who ate food or drank fluids that contained
+					unusually high levels of nitrite experienced methemoglobinemia
+					(decreased ability of the blood to carry oxygen to tissues)
+					and related symptoms such as decreases in blood pressure,
+					increased heart rate, headaches, abdominal cramps, and
+					vomiting; some people died.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" ng-if="contaminant == 'Lead'">
+		<h1 class="detail-title">What is {{contaminant}}?</h1>
+		<div class="row">
+			<div class="col-lg-6">
+				<p>Lead is a metal in the earth’s crust that is normally found with
+other metals such as zinc, silver, and copper. Lead has many
+uses including manufacturing of paints, batteries, and fishing
+weights. Lead-based solder which had been used to connect
+copper water pipes was banned in the 1980s, but
+may still be a source of lead in drinking water in older homes. In
+the United States, lead was used as a gasoline additive, but was
+banned beginning in 1973 and eliminated by 1996.
+				</p>
+				<h4 class="detail-header">What happens to lead when it enters the environment?</h4>
+				<p>
+					Lead itself does not break down, but lead compounds are
+changed by sunlight, air, and water. When lead is released to
+the air, it may travel long distances before settling to the
+ground. Once lead falls onto soil, it usually sticks to soil
+particles. Movement of lead from soil into groundwater will
+depend on the type of lead compound and the characteristics
+of the soil.
+				</p>
+			</div>
+			<div class="col-lg-6">
+					<h4 class="detail-header">How might I be exposed to lead?</h4> 
+					<p>Lead effects are similar
+whether you are exposed by breathing or ingesting particles
+containing lead (e.g., soils or dust particles). Although,
+scientific studies have identified that ingestion is the main
+route of exposure in humans. Children are most impacted by
+lead exposure because they often put their hands and/or toys
+in their mouths. Pregnant women can also expose their unborn
+child to lead via ingestion (e.g., water or food). Adults are
+exposed to lead through food, water, and air. In addition, adults
+can be exposed via lifestyle choices (e.g., cigarette smoking) or
+through their occupation (e.g., soldering, manufacturing
+plants, construction/remodeling companies, smelters, and
+auto repair shops). There are other sources of potential lead
+exposure which include: paints, glazed clay pots, wine, food,
+leaded glass (crystal), stained glass, dyes, and home remedies
+(e.g., azarcon and greta).
+					</p>
+					<h4 class="detail-header">How can lead affect my health?</h4>
+					<p> The effects of lead are the
+same whether it enters the body through breathing or
+swallowing. Lead can affect almost every organ and system in
+your body. The main target for lead toxicity is the nervous
+system, both in adults and children. Long-term exposure of
+adults can result in decreased performance in some tests that
+measure functions of the nervous system. It may also cause
+weakness in fingers, wrists, or ankles. Lead exposure also
+causes small increases in blood pressure, particularly in
+middle-aged and older people and can cause anemia. Exposure
+to high lead levels can severely damage the brain and kidneys
+in adults or children and ultimately cause death. In pregnant
+women, high levels of exposure to lead may cause miscarriage.
+High level exposure in men can damage the organs responsible
+for sperm production.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" ng-if="contaminant == 'pH'">
+		<h1 class="detail-title">What is {{contaminant}}?</h1>
+		<div class="row">
+			<div class="col-lg-6">
+				<p>pH is a measure of the acidic or basic (alkaline) nature of a
+solution. The concentration of the hydrogen ion [H+] activity in
+a solution determines the pH. pH is a determined value based
+on a defined scale, similar to temperature. This means that pH
+of water is not a physical parameter that can be measured as a
+concentration or in a quantity. Instead, it is a figure between 0
+and 14 defining how acidic or basic a body of water is along a
+logarithmic scale. The lower the number, the more acidic the
+water is. The higher the number, the more basic or alkaline it is.
+A pH of 7 is considered neutral. 
+				</p>
+				
+			</div>
+			<div class="col-lg-6">
+					<h4 class="detail-header">Why is pH important?</h4>
+				<p>
+If the pH of water is too high or too low,
+the aquatic organisms living within it will die. pH can also affect
+the solubility and toxicity of chemicals and heavy metals in the
+water. The majority of aquatic creatures prefer a pH range of
+6.5-9.0, though some can live in water with pH levels outside of
+this range. As pH levels move away from this range (up or
+down) it can stress animal systems and reduce hatching and
+survival rates. The further outside of the optimum pH range a
+value is, the higher the mortality rates. In addition to biological
+effects, extreme pH levels usually increase the solubility of
+elements and compounds, making toxic chemicals more
+“mobile” and increasing the risk of absorption by aquatic life.
+Low rates of natural recharge results in long groundwater
+residence times, which allow for interactions with aquifer
+materials that tend to increase pH levels. Low pH levels can
+encourage the solubility of heavy metals. As the level of
+hydrogen ions increases, metal cations such as aluminum,
+lead, copper and cadmium are released into the water instead
+of being absorbed into the sediment. As the concentrations of
+heavy metals increase, their toxicity also increases. High pH
+levels promote detachment of arsenic from aquifer sediments,
+elevating its concentration in groundwater. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+
