@@ -89,8 +89,11 @@ gulp.task('copy:npm', function(){
 	gulp.src('node_modules/angular-ui-router/**/*')
 	.pipe(gulp.dest(paths.build.home + 'node_modules/angular-ui-router'));
 
-	gulp.src('node_modules/bootstrap/**/*')
-	.pipe(gulp.dest(paths.build.home + 'node_modules/bootstrap'));
+	gulp.src('node_modules/angular-chart.js/**/*')
+	.pipe(gulp.dest(paths.build.home + 'node_modules/angular-chart.js'));
+
+	gulp.src('node_modules/chart.js/**/*')
+	.pipe(gulp.dest(paths.build.home + 'node_modules/chart.js'));
 });
 
 gulp.task('copy:all', ['copy:html', 'copy:assets', 'copy:npm']);
