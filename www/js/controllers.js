@@ -191,36 +191,41 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
     
 });
 
-app.controller('homeController', ['$scope', '$window', '$sce', '$state', '$stateParams', function($scope, $window, $sce, $state, $stateParams){
+app.controller('homeController', ['$scope', '$window', '$sce', '$state', '$stateParams', '$timeout', function($scope, $window, $sce, $state, $stateParams, $timeout){
 
-    $scope.isNarrowScreen = $window.innerWidth < 992;
+    console.log("home");
+    $scope.goUp = function(){
+        console.log("up");
+    };
 
-    angular.element($window).on('resize', function () {
-        if (!$scope.isNarrowScreen && $window.innerWidth < 992){
-            console.log("narrow");
-            $scope.isNarrowScreen = true;
-            $scope.$apply();
-        } else if ($scope.isNarrowScreen && $window.innerWidth >= 992) {
-            $scope.isNarrowScreen = false;
-            $scope.$apply();
-        }
-    });
+    $scope.goDown = function(){
+        console.log("down");
+    };
+
+    var pages = [$state.current.name, 'yo', 'yo'];
+
+    // angular.element($window).bind("wheel", function(e) {
+    //     if (pages.indexOf($state.current.name) != -1){
+    //         console.log("scrolled");
+    //         $scope.index = pages.indexOf($state.current.name);
+
+    //         if($scope._timeout){
+    //             $timeout.cancel($scope._timeout);
+    //         }
+    //         $scope._timeout = $timeout(function(){
+    //             $scope._timeout = null;
+
+    //             if (e.wheelDeltaY > 0 && $scope.index > 0){
+    //                 $scope.goUp();
+    //             } else if (e.wheelDeltaY < 0 && $scope.index < pages.length-1){
+    //                 $scope.goDown(); 
+    //             } 
+    //         },250);
+    //     }
+    // });
 
     $scope.counties = ['Pima', 'Gila', 'Yavapai'];
     $scope.contaminants = ['Arsenic', 'Lead', 'Nitrate', 'Fluoride', 'pH'];
-
-
-    $scope.playVideo = function(row, col){
-        // var vidid = "video" + row + col;
-        // var elem = document.getElementById(vidid);
-        // elem.play();
-    };
-
-    $scope.pauseVideo = function(row, col){
-        // var vidid = "video" +row +col;
-        // var elem = document.getElementById(vidid);
-        // elem.pause();
-    };
 
 
     $scope.goDetail = function(row, col){
