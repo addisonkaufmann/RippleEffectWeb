@@ -13,6 +13,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/partial-home.html',
             controller: 'homeController'
         })
+        .state('sonic-data', {
+            url: '/sonic-data',
+            templateUrl: 'templates/partial-sonic-data.html',
+            controller: 'homeController'
+        })
 
         .state('detail', {
             url: '/detail/:county/:contaminant', 
