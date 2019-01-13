@@ -1,51 +1,4 @@
 
-
-
-app.controller('scotchController', function($scope) {
-    
-    $scope.message = 'test';
-   
-    $scope.scotches = [
-        {
-            name: 'Macallan 12',
-            price: 50
-        },
-        {
-            name: 'Chivas Regal Royal Salute',
-            price: 10000
-        },
-        {
-            name: 'Glenfiddich 1937',
-            price: 20000
-        }
-    ];
-    
-});
-
-app.controller('SalesController', ['$scope','$interval', function($scope, $interval){
-    $scope.salesData=[
-        {hour: 1,sales: 54},
-        {hour: 2,sales: 66},
-        {hour: 3,sales: 77},
-        {hour: 4,sales: 70},
-        {hour: 5,sales: 60},
-        {hour: 6,sales: 63},
-        {hour: 7,sales: 55},
-        {hour: 8,sales: 47},
-        {hour: 9,sales: 55},
-        {hour: 10,sales: 30}
-    ];
-
-    $interval(function(){
-        var hour=$scope.salesData.length+1;
-        var sales= Math.round(Math.random() * 100);
-        $scope.salesData.push({hour: hour, sales:sales});
-    }, 1000, 10);
-}]);
-
-
-
-
 app.controller('detailController', function($scope, $stateParams, $state, $http, GilaData, YavapaiData, PimaData) {
     $scope.contaminant = $stateParams.contaminant;
     $scope.county = $stateParams.county;
@@ -97,15 +50,15 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
         }
         if ( $scope.labels.indexOf(data[i].Date) == -1) {
             $scope.labels.push(data[i].Date);
-            $scope.data[1].push(data[i].Value);
-            $scope.data[0].push(mcl);
+            $scope.data[0].push(data[i].Value);
+            $scope.data[1].push(mcl);
 
         }
      }
     $scope.piePercent = (exceed/data.length * 100).toFixed(1);
     $scope.pieData = [$scope.piePercent, 100 - $scope.piePercent];
 
-     $scope.colors = ['#0b193e', $scope.thisColor, '#5a5895', '#9c7fad', '#266067', '#5fbcbf'];
+    $scope.colors = [$scope.thisColor, '#0b193e', '#5a5895', '#9c7fad', '#266067', '#5fbcbf'];
 
 
 
@@ -113,11 +66,7 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
     $scope.message = $stateParams.county + " " + $stateParams.contaminant;
     console.log($stateParams);
 
-    // $scope.labels = ["2005", "2008", "2011", "2014"];
-    $scope.series = ["MCL", $scope.contaminant];
-    // $scope.data = [
-    //   [65, 59, 80, 81, 56, 55, 40]
-    // ];
+    $scope.series = [$scope.contaminant, "MCL"];
     $scope.onClick = function (points, evt) {
         console.log(points, evt);
     };
@@ -126,14 +75,14 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
         { 
             yAxisID: 'y-axis-1', 
             borderWidth: 2, 
-            fill: false, 
-            backgroundColor:'#0b193e'
+            fill: true, 
+            backgroundColor:$scope.thisColor
         },
         { 
             yAxisID: 'y-axis-1', 
             borderWidth: 2, 
-            fill: true, 
-            backgroundColor:$scope.thisColor
+            fill: false, 
+            backgroundColor:'#0b193e'
         },
         { 
             yAxisID: 'y-axis-1', 
