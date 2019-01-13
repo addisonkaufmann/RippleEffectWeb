@@ -66,7 +66,6 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
         "Arsenic": "#5fbcbf",
         "Nitrate": "#266067", 
         "Fluoride": "#337d7b", 
-        "pH": "#8bb5ad", 
         "Lead": "#8fc495"
     }
     $scope.thisColor = allColors[$scope.contaminant];
@@ -84,9 +83,6 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
         break;
     case "Fluoride":
         mcl = 4;
-        break;
-    case "pH":
-        mcl = 6.5;
         break;
     default:
         mcl = 0;
@@ -225,7 +221,7 @@ app.controller('homeController', ['$scope', '$window', '$sce', '$state', '$state
     // });
 
     $scope.counties = ['Pima', 'Gila', 'Yavapai'];
-    $scope.contaminants = ['Arsenic', 'Lead', 'Nitrate', 'Fluoride', 'pH'];
+    $scope.contaminants = ['Arsenic', 'Lead', 'Nitrate', 'Fluoride'];
 
 
     $scope.goDetail = function(row, col){
