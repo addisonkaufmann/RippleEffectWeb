@@ -60,7 +60,7 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
         "Pima": PimaData
     };
     var data = allData[$stateParams.county];
-    // console.log(data);
+    console.log(data);
 
     var allColors = {
         "Arsenic": "#5fbcbf",
@@ -118,7 +118,7 @@ app.controller('detailController', function($scope, $stateParams, $state, $http,
     console.log($stateParams);
 
     // $scope.labels = ["2005", "2008", "2011", "2014"];
-    $scope.series = ["Arsenic", "MCL"];
+    $scope.series = ["MCL", $scope.contaminant];
     // $scope.data = [
     //   [65, 59, 80, 81, 56, 55, 40]
     // ];
