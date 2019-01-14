@@ -136,6 +136,13 @@ a:hover {
   font-size: 30px;
   text-align: center; }
 
+.home-title {
+  color: #5fbcbf;
+  text-transform: uppercase;
+  font-family: Charlevoix-Bold;
+  font-size: 40px;
+  text-align: center; }
+
 .adeq-data-map {
   width: 100%;
   float: right; }

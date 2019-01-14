@@ -11,6 +11,7 @@ var inject = require('gulp-inject');
 var sass = require('gulp-sass');
 
 var paths = {
+	root: './',
 	dev: {
 		home: 'www/',
 		all: 'www/**/*'
@@ -68,7 +69,7 @@ gulp.task('sass', function(){
 
 
 gulp.task('copy:assets', function(){
-	gulp.src('www/assets/**/*')
+	gulp.src(paths.root + 'assets/**/*')
 	.pipe(gulp.dest(paths.build.home + 'assets'));
 
 });
