@@ -122,30 +122,30 @@ a:hover {
 .color-pH {
   color: #8bb5ad; }
 
-.human-effect-title {
+.adeq-data-title {
   color: #3eac92;
   text-transform: uppercase;
   font-family: Charlevoix-Bold;
-  font-size: 85px;
-  text-align: center; }
+  font-size: 70px;
+  text-align: center;
+  margin-top: 40px; }
 
-.human-effect-quote {
-  color: white;
+.adeq-data-subheader {
+  color: #3eac92;
   font-family: Charlevoix-Bold;
   font-size: 30px;
-  text-align: center;
-  opacity: 0.7; }
+  text-align: center; }
 
-.human-effect-map {
+.adeq-data-map {
   width: 100%;
   float: right; }
 
-.human-effect-map-legend {
+.adeq-data-map-legend {
   font-family: Geogrotesque-Regular;
   color: white;
   font-size: 35px; }
 
-.human-effect-map-legend-2 {
+.adeq-data-map-legend-2 {
   font-family: Geogrotesque-Regular;
   color: white;
   font-size: 28px;
@@ -156,7 +156,7 @@ a:hover {
 .legend-div {
   margin-bottom: 25px; }
 
-.human-effect-map-credits {
+.adeq-data-map-credits {
   font-family: Geogrotesque-Regular;
   color: white;
   font-size: 14px;
@@ -165,7 +165,13 @@ a:hover {
 button {
   font-family: Geogrotesque-Regular; }
 
-.human-effect-text {
+.adeq-data-body {
+  font-family: Geogrotesque-Regular;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px; }
+
+.adeq-data-text {
   margin-left: 20px;
   margin-right: 20px;
   border-top: 5px solid #3eac92;

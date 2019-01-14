@@ -66,9 +66,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
             }          
         })
 
-        .state('human-effect', {
-            url: '/human-effect',
-            templateUrl: 'templates/partial-human-effect.html',        
+        .state('adeq-data', {
+            url: '/adeq-data',
+            templateUrl: 'templates/partial-adeq-data.html',        
         });
         
 });
