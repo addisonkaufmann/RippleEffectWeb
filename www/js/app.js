@@ -69,6 +69,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('adeq-data', {
             url: '/adeq-data',
             templateUrl: 'templates/partial-adeq-data.html',        
+        })
+
+        .state('flint-data', {
+            url: '/flint-data',
+            templateUrl: 'templates/partial-flint-data.html',        
         });
         
 });
