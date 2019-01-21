@@ -163,6 +163,9 @@ a:hover {
 .legend-div {
   margin-bottom: 25px; }
 
+.home-grid {
+  margin-bottom: 20px; }
+
 .adeq-data-map-credits {
   font-family: Geogrotesque-Regular;
   color: white;
@@ -177,6 +180,10 @@ button {
   color: white;
   font-size: 16px;
   margin-bottom: 30px; }
+
+.home-body {
+  font-family: Geogrotesque-Regular;
+  font-size: 16px; }
 
 .adeq-data-text {
   margin-left: 20px;
