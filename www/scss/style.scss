@@ -22,6 +22,10 @@ a:hover {
   color: $teal-light;
 }
 
+.home-section {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
 
 
 .faded {
@@ -33,6 +37,10 @@ a:hover {
 .faded:hover{
   opacity: 1;
 
+}
+
+.bg-black{
+  background-color: black;
 }
 
 
@@ -111,11 +119,26 @@ a:hover {
 }
 
 .home-title {
-  color: $blue-light;
   text-transform: uppercase;
   font-family: Charlevoix-Bold;
   font-size: 40px;
   text-align: center;
+}
+
+.blue-light {
+  color: $blue-light;
+}
+
+.blue-dark{
+  color: $blue-dark;
+}
+
+.bg-blue-light {
+  background-color: $blue-light;
+}
+
+.white {
+  color: white;
 }
 
 
@@ -186,8 +209,17 @@ button {
 
 .sonic-data-button{
   color: white; 
-  background-color: $teal-med-light;
+  background-color: $blue-light;
   cursor: pointer;
+  text-decoration: none;
+  font-family: Geogrotesque-Regular;
+  opacity: 0.9
+
+}
+.sonic-data-button:hover {
+  color:white;
+  opacity: 1;
+  transition: all 50ms linear;
 }
 
 .about-header {

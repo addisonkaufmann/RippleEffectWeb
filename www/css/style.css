@@ -66,12 +66,19 @@ a {
 a:hover {
   color: #8bb5ad; }
 
+.home-section {
+  padding-top: 40px;
+  padding-bottom: 50px; }
+
 .faded {
   opacity: 0.6;
   transition: opacity 0.4s, transform 0.4s; }
 
 .faded:hover {
   opacity: 1; }
+
+.bg-black {
+  background-color: black; }
 
 .coloverlay {
   background-color: rgba(233, 33, 33, 0.4);
@@ -137,11 +144,22 @@ a:hover {
   text-align: center; }
 
 .home-title {
-  color: #5fbcbf;
   text-transform: uppercase;
   font-family: Charlevoix-Bold;
   font-size: 40px;
   text-align: center; }
+
+.blue-light {
+  color: #5fbcbf; }
+
+.blue-dark {
+  color: #1b2955; }
+
+.bg-blue-light {
+  background-color: #5fbcbf; }
+
+.white {
+  color: white; }
 
 .adeq-data-map {
   width: 100%;
@@ -197,8 +215,16 @@ button {
 
 .sonic-data-button {
   color: white;
-  background-color: #3eac92;
-  cursor: pointer; }
+  background-color: #5fbcbf;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Geogrotesque-Regular;
+  opacity: 0.9; }
+
+.sonic-data-button:hover {
+  color: white;
+  opacity: 1;
+  transition: all 50ms linear; }
 
 .about-header {
   margin-right: 20px;
