@@ -74,6 +74,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('flint-data', {
             url: '/flint-data',
             templateUrl: 'templates/partial-flint-data.html',        
+        })
+
+        .state('project-harvest', {
+            url: '/project-harvest',
+            templateUrl: 'templates/partial-project-harvest.html',        
         });
         
 });
